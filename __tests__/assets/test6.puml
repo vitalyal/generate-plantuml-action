@@ -1,4 +1,5 @@
 @startuml
 A -> B: test6
 B -> C: test6
+
 @enduml
