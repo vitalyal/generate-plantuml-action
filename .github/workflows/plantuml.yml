@@ -2,7 +2,7 @@ name: generate plantuml
 on:
   push:
     branches:
-      - master
+      - test-with-custom-server
 jobs:
   generate_plantuml:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
       - name: plantuml
         id: plantuml
-        uses: grassedge/generate-plantuml-action@master
+        uses: ./
         with:
           path: example
           plant_uml_server_url: https://securrency-plant-uml-server.azurewebsites.net
