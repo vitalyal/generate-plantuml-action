@@ -15,5 +15,6 @@ jobs:
         uses: grassedge/generate-plantuml-action@master
         with:
           path: example
+          plant_uml_server_url: https://securrency-plant-uml-server.azurewebsites.net
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
